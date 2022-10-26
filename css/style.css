@@ -1,0 +1,324 @@
+* { 
+  text-decoration: none;
+  }
+
+body{
+  margin: 0px;
+  padding: 0px;
+  background-color: #121212;
+  color: white;
+  font-family: arial;
+}
+
+h1{
+  font-size: 48px;
+  font-family: 'Press Start 2P', cursive;
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+  bottom: 0px;
+  color : #b09355;
+}
+
+hr{
+  margin-top: 50px;
+  margin-left: 12%;
+  margin-right: 12%;
+  margin-bottom: 50px;
+}
+
+                                        /*PHOTOS HAUT DE PAGE + LOL*/
+
+.splash_art{
+  width: 49.8%;
+  position: relative;
+  display: inline-block;
+  -webkit-mask-image:-webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+}
+
+a{
+  color: white;
+}
+
+p{
+  font-size: 15px;
+  line-height: 1.5;
+  margin-left: 15%;
+  margin-right: 15%;
+  text-align : justify;
+}
+
+h2{
+  font-size: 30px;
+  font-family: 'Press Start 2P';
+  color: #b09355;
+  padding-top: 50px;
+}
+
+h3{
+  font-size: 28px;
+  font-family: 'Press Start 2P';
+  color: #b09355;
+}
+
+                                        /*MENU*/
+
+
+button {
+  display: inline-block;
+  padding: 15px 100px;
+  margin: 10px 4px;
+  color: #b09355;
+  font-family: sans-serif;
+  text-align: center;
+  position: relative;
+  background: none;
+  text-decoration: none;
+  border: 1px solid transparent;
+  -webkit-transition: all 0.4s cubic-bezier(0.5, 0.24, 0, 1);
+  transition: all 0.4s cubic-bezier(0.5, 0.24, 0, 1);
+}
+
+.button::before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  z-index: -1;
+  width: 0%;
+  height: 1px;
+  background: #121212;
+  box-shadow: inset 0px 0px 0px #b09355;
+  display: block;
+  -webkit-transition: all 0.4s cubic-bezier(0.5, 0.24, 0, 1);
+  transition: all 0.4s cubic-bezier(0.5, 0.24, 0, 1);
+}
+
+.button:hover::before {
+  width: 100%;
+}
+
+.button::after {
+  content: "";
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  z-index: -1;
+  width: 0%;
+  height: 1px;
+  background: #b09355;
+  -webkit-transition: all 0.4s cubic-bezier(0.7, 0.25, 0, 1);
+  transition: all 0.4s cubic-bezier(0.7, 0.25, 0, 1);
+}
+
+.button:hover::after {
+  width: 100%;
+}
+
+.button:hover {
+  border-left: 1px solid #b09355;
+  border-right: 1px solid #b09355;
+  border-bottom: 1px solid #b09355;
+}
+
+header nav .home:focus,
+header nav .champions:focus,
+header nav .gameplay:focus {
+  color: #f2f2f2;
+  border-top: 5px;
+  border-bottom: 3px solid #f2f2f2;
+}
+
+header nav .home:focus,
+header nav .champions:focus,
+header nav .gameplay:focus {
+  color: #f2f2f2;
+  border-top: 5px;
+  border-bottom: 3px solid #b09355;
+}
+
+.header_main {
+  padding: 0px 30px;
+}
+
+.header_main h1 {
+  margin-bottom: 30px;
+  margin: 20px 0px 30px 30px;
+}
+
+div .menu {
+  display: flex;
+justify-content: center;
+}
+
+.menu ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: inline-block;
+  color: #b09355;
+}
+
+                                        /*FOOTER*/
+
+body{
+margin:0;
+overflow-x:hidden;
+}
+
+.footer{
+background: #242424;
+padding: 30px 0px;
+font-family: 'Play', sans-serif;
+text-align: center;
+}
+
+.footer .row{
+width: 100%;
+margin: 1% 0%;
+padding: 0.6% 0%;
+color: gray;
+font-size: 0.8em;
+}
+
+.footer .row a{
+text-decoration: none;
+color: gray;
+transition: 0.5s;
+}
+
+.footer .row a:hover{
+color: #fff;
+}
+
+.footer .row ul{
+width: 100%;
+}
+
+.footer .row ul li{
+display: inline-block;
+margin: 0px 18px;
+}
+
+.footer .row a i{
+font-size: 2em;
+margin: 0% 1%;
+}
+
+@media (max-width:720px){
+.footer{
+text-align: center;
+padding: 5%;
+}
+
+.footer .row ul li{
+display: block;
+margin: 10px 0px;
+text-align: center;
+}
+
+.footer .row a i{
+margin: 0% 3%;
+}
+}
+
+                                        /*CARDS*/
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.main{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+.btn {
+  color: #ffffff;
+  padding: 0.8rem;
+  font-size: 14px;
+  text-transform: uppercase;
+  border-radius: 4px;
+  font-weight: 400;
+  display: block;
+  width: 100%;
+  cursor: pointer;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: transparent;
+}
+
+.btn:hover {
+  background-color: rgba(255, 255, 255, 0.12);
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0px 0px 60px 0px;
+}
+
+.cards_item {
+  padding: 1rem;
+  display: inline-block;
+  margin:auto;
+}
+
+@media (min-width: 40rem) {
+  .cards_item {
+    width: 50%;
+  }
+}
+
+@media (min-width: 56rem) {
+  .cards_item {
+    width: 33%;
+  }
+}
+
+.card {
+  background-color: #242424;
+  border-radius: 0.50rem;
+  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.card_content {
+  padding: 1rem;
+  background: #242424;
+}
+
+.card_title {
+  color: #b09355;
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  margin: 0px;
+}
+
+.card_text {
+  color: #ffffff;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  margin-bottom: 1.25rem;    
+  font-weight: 400;
+}
+.made_by{
+  font-weight: 400;
+  font-size: 13px;
+  margin-top: 35px;
+  text-align: center;
+}
